@@ -1,3 +1,14 @@
+
+## This is clone of instagram reels feature which is similar to tiktok videos lists.Data were not dynamic:
+
+# Process to run on local:
+### `git clone https://github.com/bipin21/ig-reels-clone`
+### `npm start`
+### `npm run build`
+### `install firebase`
+### `Create reels collection on firebase`
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
