@@ -3,40 +3,39 @@ import './VideoCard.css';
 import VideoHeader from './VideoHeader';
 import VideoFooter from './VideoFooter';
 
-function VideoCard({url, likes, shares, channel, avatarSrc, song}) {
+function VideoCard({ url, likes, shares, channel, avatarSrc, song }) {
     const videoRef = useRef(null);
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
     const onVideoPress = () => {
-        if(isVideoPlaying){
+        if (isVideoPlaying) {
             // stop
             videoRef.current.pause();
             setIsVideoPlaying(false);
         }
-        else{
+        else {
             //play
             videoRef.current.play();
-            setIsVideoPlaying(true); 
+            setIsVideoPlaying(true);
         }
     }
-    // useState
-    // useRef 
+
 
     return (
         <div className='videoCard'>
             <VideoHeader />
             <video className="video__player"
-                ref = {videoRef}
+                ref={videoRef}
                 onClick={onVideoPress}
                 src={url}
                 alt='IG reel video'
                 loop
             />
             <VideoFooter
-            channel = {channel}
-            likes = {likes}
-            shares = {shares}
-            avatarSrc = {avatarSrc}
-            song = {song}
+                channel={channel}
+                likes={likes}
+                shares={shares}
+                avatarSrc={avatarSrc}
+                song={song}
             />
         </div>
     )
