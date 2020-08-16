@@ -15,7 +15,14 @@ function App() {
 
       {/* App videos */}
       <div className="app__videos">
-        <VideoCard />
+        <VideoCard 
+        channel='bipi'
+        avatarSrc='/logo192.png'
+        song='Test'
+        url='test.webm'
+        likes={900}
+        shares={100}
+        />
         <VideoCard />
         <VideoCard />
 

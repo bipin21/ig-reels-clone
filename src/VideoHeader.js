@@ -1,9 +1,13 @@
 import React from 'react';
 import './VideaoHeader.css';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import CameraAltIcon from '@material-ui/icons/CameraAlt';
 function VideoHeader() {
     return (
         <div className='videoHeader'>
-            
+            <ArrowBackIosIcon />
+            <h3>Reels</h3>
+            <CameraAltIcon />
         </div>
     )
 }
