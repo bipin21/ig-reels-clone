@@ -6,8 +6,40 @@ html{
   display: grid;
   place-items: center;
   height: 100vh;
+  background-color: #333333;
 } 
 
 .app__logo{
   height: 12vh;
+}
+
+.app__top h1{
+  text-align: center;
+  color: #ffffff;
+}
+.app__top{
+  margin-bottom: -150px;
+}
+
+.app__videos{
+  position: relative;
+  height: 65vh;
+  background-color: #ffffff;
+  width: 70%;
+  border-radius: 20px;
+  max-width: 450px;
+  max-height: 1200px;
+  overflow:scroll;
+  scroll-snap-type: y mandatory;
+}
+
+/* hide scrollbar for chrome */
+.app__videos::-webkit-scrollbar{
+  display: none;
+}
+
+.app__videos{
+  -ms-overflow-style: none; /* IE and edge */
+  scrollbar-width: none; /* firefox */
+ 
 }
