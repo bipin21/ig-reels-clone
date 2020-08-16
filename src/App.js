@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    // BEM naming convention
+    <div className="app">
+      {/* App top */}
+      <div className="app__top">
+        <img className="app__logo" src="/logo192.png" alt="" />
+        <h1>Reels</h1>
+      </div>
+
+      {/* App videos */}
+      <div className="app__videos">
+        
+
+      </div>
     </div>
   );
 }
